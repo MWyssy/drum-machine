@@ -1,0 +1,9 @@
+#display {
+    height: 70%;
+    width: 85vw;
+    background-color: rgb(130, 130, 74);
+    box-shadow: 
+        inset -1px 1px 5px 1px rgb(76, 76, 43),
+        inset 2px -2px 0 0 rgb(70, 74, 91);
+    border-radius: 10px;
+}

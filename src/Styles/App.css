@@ -1,9 +1,14 @@
 #root {
   margin: 0 auto;
-  padding: 25px;
+  padding: 5px;
   text-align: center;
-  border: var(--dark) 15px solid;
+  border: none;
   border-radius: 25px;
+  background-color: rgb(33, 35, 43);
+  box-shadow: 
+        4px 4px 1px 1px rgb(15, 16, 20),
+        inset 4px 4px 1px 1px rgb(70, 74, 91);
+  
 }
 
 
