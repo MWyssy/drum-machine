@@ -1,5 +1,5 @@
-import './App.css'
-import Title from './components/Title'
+import './Styles/App.css'
+import Title from './components/Title.jsx'
 
 function App() {
 
