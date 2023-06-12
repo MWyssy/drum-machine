@@ -1,11 +1,11 @@
 import '../Styles/Display.css'
 
-function Display() {
+function Display({ sound }) {
    
 
     return (
         <section id="display">
-            <h3>Display</h3>
+            <h3>{sound}</h3>
         </section>
     )
 }

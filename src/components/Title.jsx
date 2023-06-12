@@ -5,7 +5,7 @@ function Title() {
 
     return (
         <>
-            <h1>Title</h1>
+            <h1>Mike's Drum Machine</h1>
         </>
     )
 }

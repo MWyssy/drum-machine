@@ -1,9 +1,22 @@
 #display {
-    height: 70%;
+    height: 50px;
     width: 85vw;
     background-color: rgb(130, 130, 74);
     box-shadow: 
         inset -1px 1px 5px 1px rgb(76, 76, 43),
         inset 2px -2px 0 0 rgb(70, 74, 91);
     border-radius: 10px;
+    font-family: 'Silkscreen', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    align-self: center;
+}
+
+@media (min-width: 0) {
+    #display {
+        font-size: 1.5rem;
+    }
 }

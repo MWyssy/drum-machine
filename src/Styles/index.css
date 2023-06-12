@@ -19,5 +19,8 @@ html {
 }
   
 :root {
-  
+  --on-background: radial-gradient(rgb(45, 48, 58), rgb(33, 36, 43));
+  --off-background: radial-gradient(rgb(156, 160, 175), rgb(91, 94, 104));
+  --on-text: rgb(43, 46, 56);
+  --off-text: rgb(128, 131, 143)
 }
