@@ -13,3 +13,16 @@ h1 {
         margin-top: 10vh;
     }
 }
+
+@media (min-width: 500px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+
+@media (min-width: 850) {
+    h1 {
+        font-size: 9rem;
+    }
+}

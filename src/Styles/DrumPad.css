@@ -2,12 +2,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 97.5%;
+    width: 90vw;
     padding: 5px;
     background-color: rgb(255, 47, 47);
     border-radius: 20px;
     box-shadow: inset -2px 2px 15px 5px rgb(122, 23, 23);
-    margin-left: 5px;
+    margin-left: 2vw;
 }
 
 .drum-pad {
@@ -45,6 +45,9 @@
     .drum-pad {
         font-size: 5rem;
     }
+    #drum-pads {
+        max-height: 45vh;
+    }
 }
 
 @media (orientation: landscape) {
@@ -63,5 +66,29 @@
     #display-and-switch {
         width: 50vw;
         margin-top: -5vh;
+    }
+}
+
+@media (min-width: 500px) {
+    .drum-pad {
+        font-size: 6rem;
+    }
+    #drum-pads {
+        max-height: 75vh;
+    }
+    #display-and-switch {
+        height: 30vh;
+    }
+}
+
+@media (min-width: 850px) {
+    .drum-pad {
+        font-size: 10rem;
+    }
+    #drum-pads {
+        max-height: 80vh;
+    }
+    #display-and-switch {
+        height: 30vh;
     }
 }

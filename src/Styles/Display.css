@@ -18,11 +18,27 @@ h3 {
 @media (min-width: 0) {
     #display {
         font-size: 1.5rem;
+        margin-top: -5vh;
     }
 }
 
 @media (orientation: landscape) {
     #display {
         width: 45vw;
+    }
+}
+
+@media (min-width: 500px) {
+    #display {
+        font-size: 3rem;
+        height: 8vh;
+    }
+}
+
+@media (min-width: 850px) {
+    #display {
+        font-size: 4rem;
+        height: 10vh;
+        margin-top: 5vh;
     }
 }
