@@ -51,7 +51,7 @@
     @media (min-width: 0) {
         .drum-pad {
             font-size: 5rem;
-            max-height: 90%;
+            max-height: 60%;
         }
         #drum-pads {
             max-height: 45%;
@@ -73,10 +73,7 @@
     #body {
         display: flex;
     }
-    .drum-pad {
-        max-width: 90%;
-        max-height: 90%;
-    }
+    
     #drum-pads {
         width: 40%;
         grid-area: 1 / col2-start;
@@ -92,7 +89,7 @@
     @media (min-width: 0) {
         .drum-pad {
             font-size: 5rem;
-            max-height: 90%;
+            max-height: 60%;
         }
         #drum-pads {
             max-height: 90%;
