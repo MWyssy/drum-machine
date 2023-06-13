@@ -12,9 +12,8 @@
 }
 
 
-@media (min-width: 640px) {
-  
-}
-@media (min-width: 1080px) {
-  
+@media (orientation: landscape) {
+  #root {
+    height: 92.5vh;
+  }
 }

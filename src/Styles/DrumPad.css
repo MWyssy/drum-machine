@@ -3,7 +3,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: 97.5%;
-    height: 97.5%;
     padding: 5px;
     background-color: rgb(255, 47, 47);
     border-radius: 20px;
@@ -45,5 +44,24 @@
 @media (min-width: 0) {
     .drum-pad {
         font-size: 5rem;
+    }
+}
+
+@media (orientation: landscape) {
+    #body {
+        display: flex;
+    }
+    
+    #drum-pads {
+        width: 40vw;
+        grid-area: 1 / col2-start;
+        position: absolute;
+        top: 7vh;
+        right: 2.5vw;
+    }
+
+    #display-and-switch {
+        width: 50vw;
+        margin-top: -5vh;
     }
 }

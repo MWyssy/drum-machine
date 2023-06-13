@@ -7,7 +7,7 @@ function App() {
  
   return (
     <section id='drum-machine'>
-      <Title />
+      <Title/>
       <DrumPad />
     </section>
   )

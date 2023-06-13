@@ -4,9 +4,9 @@ function Title() {
    
 
     return (
-        <>
+        <section id='title'>
             <h1>Mike's Drum Machine</h1>
-        </>
+        </section>
     )
 }
 

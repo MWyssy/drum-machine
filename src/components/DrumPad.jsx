@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../Styles/DrumPad.css'
 import Display from './Display'
 import Switch from './Switch'
@@ -15,59 +15,63 @@ import ClosedHH from '../assets/ClosedHH.mp3'
 function DrumPad() {
    const [switchOn, setSwitchOn] = useState(true)
    const [sound, setSound] = useState('')
-   const [play, setPlay] = useState({
-    Q: false,
-    W: false,
-    E: false,
-    A: false,
-    S: false,
-    D: false,
-    Z: false,
-    X: false,
-    C: false,
-   })
 
    function playSound(button) {
     if (switchOn) {
         switch (button) {
             case 'Q':
                 setSound('Heater 1')
-                setPlay({
-                    ...play,
-                    Q: true
-                })
+                const audioElement1 = document.getElementById('Q');
+                audioElement1.currentTime = 0;
+                audioElement1.play()
                 break;
             case 'W':
                 setSound('Heater 2')
-                heater2.play();
+                const audioElement2 = document.getElementById('W');
+                audioElement2.currentTime = 0;
+                audioElement2.play()
                 break;
             case 'E':
                 setSound('Heater 3')
-                heater3.play();
+                const audioElement3 = document.getElementById('E');
+                audioElement3.currentTime = 0;
+                audioElement3.play()
                 break;  
             case 'A':
                 setSound('Heater 4')
-                heater4.play();
+                const audioElement4 = document.getElementById('A');
+                audioElement4.currentTime = 0;
+                audioElement4.play()
                 break;
             case 'S':
                 setSound('Clap')
-                clap.play();
+                const audioElement5 = document.getElementById('S');
+                audioElement5.currentTime = 0;
+                audioElement5.play();
                 break;
             case 'D':
                 setSound('Open Hat')
-                openHH.play();
+                const audioElement6 = document.getElementById('D');
+                audioElement6.currentTime = 0;
+                audioElement6.play();
                 break;    
             case 'Z':
                 setSound('Kick n\' Hat')
-                kick_n_hat.play();
+                const audioElement7 = document.getElementById('Z');
+                audioElement7.currentTime = 0;
+                audioElement7.play();
                 break;
             case 'X':
                 setSound('Kick')
-                kick.play();
+                const audioElement8 = document.getElementById('X');
+                audioElement8.currentTime = 0;
+                audioElement8.play();
                 break;
             case 'C':
                 setSound('Closed Hat')
-                closedHH.play();
+                const audioElement9 = document.getElementById('C');
+                audioElement9.currentTime = 0;
+                audioElement9.play();
                 break;
         }
     }
@@ -76,17 +80,6 @@ function DrumPad() {
    function handleClick(event) {
     const button = event.target.outerText
     playSound(button);
-    setTimeout(setPlay({
-        Q: false,
-        W: false,
-        E: false,
-        A: false,
-        S: false,
-        D: false,
-        Z: false,
-        X: false,
-        C: false,
-    }), 500)
    }
 
    function handleKeyPress(event) {
@@ -95,24 +88,24 @@ function DrumPad() {
    }
 
     return (
-        <>
+        <section id='body'>
             <section id='display-and-switch'>
                 <Switch switchOn={switchOn} setSwitchOn={setSwitchOn} setSound={setSound}/>
                 <Display sound={sound}/>
             </section>
             <section id='drum-pads'>
-                <button type='button' className='drum-pad' id='Q' onClick={handleClick} onKeyDown={handleKeyPress}><audio src={Heater1} preload='auto' autoPlay={play.Q}></audio>Q</button>
-                <button type='button' className='drum-pad' id='W' onClick={handleClick}>W</button>
-                <button type='button' className='drum-pad' id='E' onClick={handleClick}>E</button>
-                <button type='button' className='drum-pad' id='A' onClick={handleClick}>A</button>
-                <button type='button' className='drum-pad' id='S' onClick={handleClick}>S</button>
-                <button type='button' className='drum-pad' id='D' onClick={handleClick}>D</button>
-                <button type='button' className='drum-pad' id='Z' onClick={handleClick}>Z</button>
-                <button type='button' className='drum-pad' id='X' onClick={handleClick}>X</button>
-                <button type='button' className='drum-pad' id='C' onClick={handleClick}>C</button>
+                <button type='button' className='drum-pad' onClick={handleClick} onKeyDown={handleKeyPress} id='heater-1'>Q<audio src={Heater1} className="clip" id="Q"></audio></button>
+                <button type='button' className='drum-pad' onClick={handleClick}onKeyDown={handleKeyPress} id='heater-2' >W<audio src={Heater2} className="clip" id="W"></audio></button>
+                <button type='button' className='drum-pad' onClick={handleClick}onKeyDown={handleKeyPress} id='heater-3'>E<audio src={Heater3} className="clip" id="E"></audio></button>
+                <button type='button' className='drum-pad' onClick={handleClick}onKeyDown={handleKeyPress} id='heater-4'>A<audio src={Heater4} className="clip" id="A"></audio></button>
+                <button type='button' className='drum-pad' onClick={handleClick}onKeyDown={handleKeyPress} id='clap'>S<audio src={Clap} className="clip" id="S"></audio></button>
+                <button type='button' className='drum-pad' onClick={handleClick}onKeyDown={handleKeyPress} id='open-hh'>D<audio src={OpenHH} className="clip" id="D"></audio></button>
+                <button type='button' className='drum-pad' onClick={handleClick}onKeyDown={handleKeyPress} id='kick-n-hat'>Z<audio src={Kick_n_Hat} className="clip" id="Z"></audio></button>
+                <button type='button' className='drum-pad' onClick={handleClick}onKeyDown={handleKeyPress} id='kick'>X<audio src={Kick} className="clip" id="X"></audio></button>
+                <button type='button' className='drum-pad' onClick={handleClick}onKeyDown={handleKeyPress} id='closed-hh'>C<audio src={ClosedHH} className="clip" id="C"></audio></button>
             </section>
             
-        </>
+        </section>
     )
 }
 
