@@ -13,6 +13,11 @@ h1 {
         width: 100%;
         margin-top: 10%;
     }
+    @media (min-width: 800px) {
+        h1 {
+            font-size: 5rem;
+        }
+    }
     
 }
 
@@ -20,6 +25,18 @@ h1 {
     #title {
         width: 55%;
         margin-top: 10%;
+    }
+    @media (min-width: 0) {
+        #title {
+            width: 55%;
+            margin-top: 0;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        h1 {
+            font-size: 5rem;
+        }
     }
 }
 

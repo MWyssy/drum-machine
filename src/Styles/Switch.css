@@ -30,12 +30,45 @@
     color: var(--off-text);
 }
 
-@media (min-width: 0) {
-    .on-off {
-        font-size: 1rem;
+
+
+@media (orientation: portrait) {
+    
+    @media (min-width: 0) {
+        .on-off {
+            font-size: 1rem;
+        }
+        #switch {
+            margin-top: -10%;
+        }
     }
-    #switch {
-        margin-top: -10%;
+    @media (min-width: 800px) {
+        .on-off {
+            font-size: 2rem;
+        }
+        #switch {
+            margin-top: -10%;
+        }
     }
 }
 
+
+@media (orientation: landscape) {
+   
+    @media (min-width: 0) {
+        .on-off {
+            font-size: 1rem;
+        }
+        #switch {
+            margin-top: -10%;
+        }
+    }
+    @media (min-width: 1000px) {
+        .on-off {
+            font-size: 3rem;
+        }
+        #switch {
+            margin-top: -10%;
+        }
+    }
+}
