@@ -5,24 +5,22 @@ h1 {
     text-shadow: 
         2px 1px 0 rgb(110, 110, 110),
         2px -2px 0 rgb(110, 110, 110);
+    text-align: center;
+}
+
+@media (orientation: portrait) {
+    #title {
+        width: 100%;
+        margin-top: 10%;
+    }
+    
 }
 
 @media (orientation: landscape) {
     #title {
-        width: 55vw;
-        margin-top: 10vh;
-    }
-}
-
-@media (min-width: 500px) {
-    h1 {
-        font-size: 5rem;
+        width: 55%;
+        margin-top: 10%;
     }
 }
 
 
-@media (min-width: 850) {
-    h1 {
-        font-size: 9rem;
-    }
-}
