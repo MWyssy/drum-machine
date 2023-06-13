@@ -101,7 +101,8 @@
 
     @media (min-width: 1000px) {
         .drum-pad {
-            font-size: 7rem;
+            font-size: 5rem;
+            padding: 0;
         }
         #drum-pads {
             max-height: 85%;
