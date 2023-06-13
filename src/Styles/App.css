@@ -8,7 +8,7 @@
   box-shadow: 
         4px 4px 1px 1px rgb(15, 16, 20),
         inset 4px 4px 1px 1px rgb(70, 74, 91);
-  
+  max-height: 100%;
 }
 
 
