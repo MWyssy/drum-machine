@@ -19,7 +19,7 @@
 
 .drum-pad {
     aspect-ratio: 1 / 1;
-    margin: 5px;
+    margin: 25%;
     background: radial-gradient(rgb(90, 90, 90), rgb(77, 77, 77));
     border-radius: 20px;
     border: none;
